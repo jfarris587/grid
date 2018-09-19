@@ -1,0 +1,24 @@
+$container__max: 1100;
+$column__num: 12;
+
+.container{
+  max-width: $container__max * 1px;
+  margin: 0 auto;
+
+  &--fluid{
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  @for $i from 1 through $column__num {
+    .col-#{$i} {
+      flex-basis: (100 / ($column__num / $i) ) * 1%;
+    }
+  }
+}

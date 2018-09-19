@@ -1,0 +1,44 @@
+@import "base/grid.scss";
+
+html {
+  height: 100%;
+}
+
+body {
+  background: #fff;
+  font-family: sans-serif;
+  text-rendering: optimizeLegibility;
+  height: 100%;
+}
+
+
+.container{
+  background-color: #83a4d4;
+  height: auto;
+  margin: 50px auto;
+  padding: 2px 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.row{
+  background-color: #b6fbff;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 8px 0;
+
+}
+
+div[class^="col"] {
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .4);
+
+  p{
+    text-align: center;
+
+  }
+}
